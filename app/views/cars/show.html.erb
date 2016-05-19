@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @car.model %>
+</p>
+
+<p>
+  <strong>Marka:</strong>
+  <%= @car.marka %>
+</p>
+
+<p>
+  <strong>Rocznik:</strong>
+  <%= @car.rocznik %>
+</p>
+
+<p>
+  <strong>Zdjęcie:</strong>
+  <%= image_tag @car
+  .zalacznik.url(:medium) %>
+</p>
+
+
+<%= link_to 'Edytuj', edit_car_path(@car) %> |
+<%= link_to 'Cof', cars_path %>
+
